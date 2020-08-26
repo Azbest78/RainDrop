@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="raindrop.css">
+		<script src="raindrop.js"></script>
+	</head>
+
+	<body style = "overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 1s  ease-in-out;" onload="javascript: startRain()">
+	<div id = "menu">
+		<div id="div_drops">
+			<input type="text" id="inp" onchange="javascript: addDrop(this.value)">
+			<div id="div_drops_list"> </div>	
+		</div>
+		<div id="configsParamBlock">
+			<div>Spawn internal time</div>
+			<div class="configParam">
+				<input class="configParamInpt" type="text" id="dropSpawnInternalInp" readonly><input class="configParamSlid" type="range" step="100" min="100" max="3000" id="dropSpawnInternal" onchange="javascript: setDropSpawnInternal(this.value)"> ms</div>
+			<div class="configParam">Min display time<br/>
+				<input class="configParamInpt" type="text" id="dropMinDisplayTimeInp" readonly><input class="configParamSlid" type="range" step="100"  min="100" max="3000" id="dropMinDisplayTime" onchange="javascript: setDropMinDisplayTime(this.value)"> ms</div>
+			<div class="configParam">Mod display time<br>
+				<input class="configParamInpt" type="text" id="dropModDisplayTimeInp" readonly><input class="configParamSlid" style="width:110px" step="5"  min="0" max="100" type="range" id="dropModDisplayTime" onchange="javascript: setDropModDisplayTime(this.value)"> x DFS</div>
+			<div class="configParam">Min fadeOut time<br/>
+				<input class="configParamInpt" type="text" id="dropMinFadeOutTimeInp" readonly><input class="configParamSlid" type="range" step="100"  min="100" max="3000" id="dropMinFadeOutTime" onchange="javascript: setDropMinFadeOutTime(this.value)"> ms</div>
+			<div class="configParam">Mod fadeOut time<br/>
+				<input class="configParamInpt" type="text" id="dropModFadeOutTimeInp" readonly><input class="configParamSlid"  style="width:110px" step="5"  min="0" max="100" type="range" id="dropModFadeOutTime" onchange="javascript: setDropModFadeOutTime(this.value)"> x DFS</div>
+			<hr size="1px"/>
+			<div class="configParam">
+				<button type="button" onclick="javascript:  saveRainDrop()">Save</button>
+				<button type="button" onclick="javascript:  loadRainDrop()">Load</button>
+				<button type="button" onclick="javascript: clearRainDrop()">Clear</button>
+			</div>
+		</div>
+		
+		<div id= "div_drop_background"> URL: 
+			<input type="url" id="dropBackgroundUrl" placeholder="http://example.com" pattern="http?://.*" size=100 onchange="javascript: setRainDropBackgroundUrl(this.value)" >
+	    </div>
+	</div>
+	<div id = "loadFile">
+		<input type="file" id="file-input"/>
+		<h3>Contents of the file:</h3>
+		<pre id="file-content"></pre>
+	</div>
+	</body>
+</html>

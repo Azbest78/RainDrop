@@ -1,0 +1,12 @@
+{
+  "name": "rainDropDefault",
+  "backgroundURL": "",
+  "drops": [],
+  "config": {
+    "dropSpawnInternal": 800,
+    "dropMinDisplayTime": 0,
+    "dropModDisplayTime": 25,
+    "dropMinFadeOutTime": 0,
+    "dropModFadeOutTime": 25
+  }
+}

@@ -1,0 +1,25 @@
+-obsługa wielu raindropow
+-dodawanie nowego do lisy
+-tworzenie noego  na podstawie starego
+-grupowania raindrpow po typie w pionowych kolumnach
+
+-pozioma lista typew raindropow z konfigurowana kolejnoscia : 
+location > vehicle > place > residents > shop > character > item > events > event
+lista ma być typu carusel
+umijescowona na top body
+maksymalan szerokość = serkokosc stony i altywne menu dla raindropa
+prewijania / pregladania / hover listy ma zapauzować płynnie aktywnego raindropa wraz z subraindropami,
+raindrop wraz z subami mają wznosic dzialanie po skonczonej nawigacji na liście
+
+
+konfiguracja raindropa
+-dodanie ustawinia minimalnego rozmiaru dropa
+-doanie ustawinia maksymalnego rozmiaru dropa
+-dodanie ustawinia koloru dropa dla mainRaindrop
+-dodanie ustawinia koloru obramowki dropa dla mainRaindrop
+
+-dodanie ustawinia koloru dropa dla groupRaindropN - gdzie n od 0 do maxSupportedGroup
+-dodanie ustawinia koloru obramowki dropa dla gropuRaindropN
+
+-dodanie ustawinia koloru dropa dla mainRaindrop
+-dodanie ustawinia koloru obramowki dropa dla mainRaindrop

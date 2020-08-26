@@ -1,0 +1,79 @@
+{
+	"rainDrops" : [
+		{ "id" : "miasto_porotwe_Drops",
+			"name" : "Miasto Porotwe",
+			"type" : "location",
+			"backgroundURL": "https://wallpaperaccess.com/full/1861879.jpg",
+			"drops" : [
+				{"text" : "wielkie i rozlane po okolicy", "counter" : 0},
+				{"text" : "otoczone beżowymi murami"},
+				{"text" : "najeżone wieżami o spiczastych błyszczących dachach"},
+				{"text" : "błyskające zieloniym szmaragdem rudo-miedziane dachy świątyń i pałąców"},
+				{"text" : "radosna zieleni ogrodów i biel wapienia murów posiadłości"},
+				{"text" : "czerwień dachowek na dachach"},
+				{"text" : "czern na drewnianych ścianach magazynów oraz wieży dzwigowej"},
+				{"text" : "frontem do morza", "group" : "morze_Drops"},
+				{"text" : "las drewnianych masztów", "group" : "port_Drops"}
+			],
+			"config": {
+				"dropSpawnInternal" : 1200,
+				"dropMinDisplayTime" : 600,
+				"dropModDisplayTime" : 40,
+				"dropMinFadeOutTime" : 0,
+				"dropModFadeOutTime" : 25
+			}
+		},
+		{ "id" : "morze_Drops",
+		  "name" : "Zatoka",
+		  "type" : "place",
+		  "backgroundURL" : "https://wallpaperaccess.com/full/1861879.jpg",
+		  "drops" : [
+			{"text" : "morze zielonosine"},
+			{"text" : "skrzące się w promieniach słońca"},
+			{"text" : "upstrzone tu i ówdzie białymi plamkami żagli"},
+			{"text" : "żeglowce handlowe sunące ociężale niczym żuki"},
+			{"text" : "zwinne i smukłe galery z wiosłami jak nogi stawonoga"},
+			{"text" : "głuchy szum fal"},
+			{"text" : "przeciągły szum wiatru"},
+			{"text" : "rozdzierający skrzek mew"},
+			{"text" : "zapach ryb i glonów"},
+			{"text" : "zapach soli"},
+		  ],
+		  "config" : {
+			"dropSpawnInternal" : 1200,
+			"dropMinDisplayTime" : 600,
+			"dropModDisplayTime" : 40,
+			"dropMinFadeOutTime" : 0,
+			"dropModFadeOutTime" : 25
+		  }
+		},
+		{ "id" : "port_Drops",
+		  "name" : "Port",
+		  "type" : "place",
+		  "backgroundURL" : "https://wallpaperaccess.com/full/1861879.jpg",
+		  "drops" : [
+			{"text" : "żeglowiec zbliżający sie ociężale, holowany przez pilota"},
+			{"text" : "zwinna i smukła galera"},
+					  
+			{"text" : "głuchy szum fal"},
+			{"text" : "przeciągły szum wiatru"},
+			{"text" : "rozdzierający skrzek mew"},
+			{"text" : "zapach świeżych ryb"},
+			{"text" : "zapach morskiej soli"},
+			{"text" : "aromat korzennych przypraw i zamorskich ziół"},
+			{"text" : "trzeszczenie kadłubów i skrzypienie takielunku"},
+			{"text" : "dzwon na boji"},
+			{"text" : "łopot żagli"},
+			{"text" : "pokrzykiwanie bosmana i komendy oficerów"},
+			{"text" : "tania dziwka portowa", "group" : "npc_Suzan_Boyle_Drop" }
+		  ],
+		  "config": {
+			"dropSpawnInternal": 1200,
+			"dropMinDisplayTime": 600,
+			"dropModDisplayTime": 40,
+			"dropMinFadeOutTime": 0,
+			"dropModFadeOutTime": 25
+		  }
+		},
+	]
+}
